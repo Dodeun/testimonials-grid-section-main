@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        margin: 5vh 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:  
+            "a a"
+            "b d"
+            "e e"
+            "c c";
+        
+        #card1 {
+            grid-area: a;
+        }
+
+        #card2 {
+            grid-area: b;
+        }
+
+        #card3 {
+            grid-area: d;
+        }
+
+        #card4 {
+            grid-area: e;
+        }
+
+        #card5 {
+            grid-area: c;
+        }
+    }
+}
+
+@media screen and (min-width: 975px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        max-width: 1110px;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:  
+            "a a b c"
+            "d e e c";
+
+        #card1 {
+            background-position: top right 75px;
+        }
+    }
+}
