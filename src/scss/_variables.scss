@@ -1,3 +1,15 @@
 /* ----------------------------------- COLORS ----------------------------------- */
 
-$test-color: lightblue;
+$c_bg_body: hsl(210, 46%, 95%);
+$c_bg_card1: hsl(263, 55%, 52%);
+$c_bg_card2: hsl(217, 19%, 35%);
+$c_bg_card3: hsl(0, 0%, 100%);
+$c_bg_card4: hsl(219, 29%, 14%);
+$c_bg_card5: hsl(0, 0%, 100%);
+
+
+$c_txt_light: hsl(0, 0%, 100%);
+$c_txt_dark: hsl(217, 19%, 35%);
+
+// 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+// 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity

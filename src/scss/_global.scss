@@ -4,6 +4,104 @@
     padding: 0;
 }
 
+:root {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: $c_txt_light;
+}
+
 body {
-    background-color: $test-color;
+    background-color: $c_bg_body;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: calc(100% - 48px);
+    margin: 10vh 0;
+    display: grid;
+    gap: 25px;
+
+    .card {
+        background-color: red;
+        border-radius: 8px;
+        padding: 2rem 2.4rem;
+        position: relative;
+
+        .profile-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+            margin-bottom: 1rem;
+
+            img {
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                border: 2px solid rgba($c_txt_light, 0.3);
+            }
+            
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: .9rem;
+                font-weight: 500;
+            }
+        }
+
+        h2 {
+            font-size: 1.56rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.4rem;
+        }
+    }
+
+    .dark {
+        color: $c_txt_light;
+
+        p {
+            color: rgba($c_txt_light, 0.6);
+        }
+    }
+
+    .light {
+        color: $c_txt_dark;
+
+        p {
+            color: rgba($c_txt_dark, 0.6);
+        }
+    }
+
+    #card1 {
+        background-color: $c_bg_card1;
+        background-image: url(../img/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top right 25px;
+    }
+
+    #card2 {
+        background-color: $c_bg_card2;
+    }
+    
+    #card3 {
+        background-color: $c_bg_card3;
+    }
+
+    #card4 {
+        background-color: $c_bg_card4;
+    }
+
+    #card5 {
+        background-color: $c_bg_card5;
+    }
+
 }
